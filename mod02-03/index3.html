@@ -4,49 +4,77 @@
 	<meta charset=”utf-8”>
 	<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title>DOM Activity 3 - Sample Project</title>
+	<title>DOM Activity 3 - Image</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div>
 		<header>
-			<h1>TUITT CODING BOOTCAMP</h1>
+			<h1>Tuitt Coding Bootcamp</h1>
 		</header>
 		<main>
-			<div>
-				<figure><i class=""></i></figure>
-				<h2>Dashboard</h2>
-			</div>
-			<div>
-				<figure><i class=""></i></figure>
-				<p>5 posts</p>
-			</div>
-			<div>
-				<figure><i class=""></i></figure>
-				<p>13 images</p>
-			</div>		
+			<!-- Dashboard -->
+			<section>
+				<h3><i class="fa fa-home" aria-hidden="true"></i>Dashboard</h3>
+				
+				<div>
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					<p>5 posts</p>
+				</div>
+				<div>
+					<i class="fa fa-picture-o" aria-hidden="true"></i>
+					<p>13 images</p>
+				</div>		
+			</section>
+
+			<!-- New Post -->
+			<section>	
+				<h3><i class="fa fa-plus-circle" aria-hidden="true"></i>New Post</h3>
+				<form action="" method="">
+					<input type="text" name="title" placeholder="Enter your post title"><br />
+					<textarea rows="4" placeholder="Enter post content here"></textarea>
+					<input type="submit" name="publish" value="Publish">
+				</form>
+			</section>
+
+			<!-- Upload Image -->
+			<section>
+				<h3><i class="fa fa-cloud-upload" aria-hidden="true"></i>Upload Image</h3>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="http://lorempixel.com/300/300/" width="300px" height="300px" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://lorempixel.com/300/300/" width="300px" height="300px" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://lorempixel.com/300/300/" width="300px" height="300px" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://lorempixel.com/300/300/" width="300px" height="300px" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://lorempixel.com/300/300/" width="300px" height="300px" alt="">
+						</a>
+					</li>
+				</ul>
+				<form action="" method="">
+					<input type="file" name="" hidden>
+					<button type="submit">Browse</button>
+					<button type="submit">Upload</button>
+				</form>
+			</section>
 		</main>
-		<section>
-			<figure><i class=""></i></figure>
-			<h2>New Post</h2>
-			<form action="" method="">
-				<input type="text" name="title" value="Enter your post title"><br />
-				<textarea rows="4">Enter post content here</textarea>
-				<input type="submit" name="publish" value="Publish">
-			</form>
-		</section>
-		<section>
-			<figure><i class=""></i></figure>
-			<h2>Upload Image</h2>
-			<figure><img src="http:/lorempixel.com/300/300/" width="300px" height="300px"></figure>
-			<figure><img src="http:/lorempixel.com/300/300/" width="300px" height="300px"></figure>
-			<figure><img src="http:/lorempixel.com/300/300/" width="300px" height="300px"></figure>
-			<figure><img src="http:/lorempixel.com/300/300/" width="300px" height="300px"></figure>
-			<figure><img src="http:/lorempixel.com/300/300/" width="300px" height="300px"></figure>
-			<form action="" method="">
-				<input type="file" name="image">
-				<input type="submit" name="upload" value="Upload">
-			</form>
-		</section>
 		<footer>
 			<p>Tuitt Coding Bootcamp &copy; 2017</p>
 		</footer>

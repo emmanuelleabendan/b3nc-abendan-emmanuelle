@@ -1,0 +1,132 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ddd;
+}
+
+.wrapper {
+	width: 700px;
+	margin: 0 auto;
+	background-color: #111;
+	color: #fff;
+}
+
+header {
+	background-color: #960606;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	font-family: "Bangers", cursive;
+	letter-spacing: 3px;
+	padding: 15px;
+}
+
+footer {
+	background-color: #490000;
+	height: 70px;
+	color: #fdfdfd;
+	line-height: 70px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.dashboard-thumbnail {
+	display: inline-block;
+	width: 40%;
+	height: 100px;
+}
+
+.dashboard-circles {
+	height: 70px;
+	width: 70px;
+	background-color: red;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	float: left;
+	margin-right: 20px;
+}
+
+#postCircle{
+	background-color: #a01111;
+	margin-left: 60px;
+}
+
+#imageCircle {
+	background-color: #4c4b4b;
+	margin-left: 60px;
+}
+
+#postTitle {
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+#postContent {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.btn {
+	border: none;
+	padding: 15px 30px;
+	font-size: 14px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.btn-blue {
+	background-color: #4c4b4b;
+}
+
+.btn-green {
+	background-color: #a01111;
+}
+
+#btnBrowse {
+	margin-right: 5px;
+}
+
+#btnPublish,
+#btnUpload,
+#btnBrowse {
+	float: right;
+}
+
+.hide-overflow {
+	overflow: hidden;
+}
+
+main {
+	padding: 20px;
+	font-family: 'Magra', sans-serif;
+}
+
+.img-set {
+	height: 79px;
+	width: 108px;
+	background-color: white;
+	padding: 5px;
+	border-radius: 3px;
+	margin: 5px;
+}
+
+.inline-blocked {
+	display: inline-block;
+}
+
+.dashboard-text {
+	margin: 0;
+	font-size: 24px;
+	width: 100%;
+	text-align: center;
+}
+
