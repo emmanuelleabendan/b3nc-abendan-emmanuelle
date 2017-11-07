@@ -1,0 +1,50 @@
+/*css reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	border: 1px solid #232323;
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+div.wrapper > div,
+div.wrapper > div > div {
+	border: 2px solid #5d6063;
+	background-color: skyblue;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+h1,
+p {
+	background-color: #dde0e3;
+}
+
+/*from inline to block*/
+em,
+strong {
+	background-color: #b2d6ff;
+	display: inline;
+}
+
+h1 {
+	padding: 50px;
+	border: 1px solid #5d6063;
+}
+
+strong {
+	/*padding: 50px;*/
+	margin: 50px;
+}
+
+p {
+	padding: 20px 0 20px 10px;
+	/*margin-bottom: 50px;*/
+	margin-top: 25px;
+}
