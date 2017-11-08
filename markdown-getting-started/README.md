@@ -50,3 +50,12 @@ Inline `code` has `back-ticks around` it.
 :zap:
 
 :v:
+
+## Tables
+
+| firstname    | lastname |
+|:-------------|:---------|
+| Eman         | Abendan  |
+| Billy Wilson | Arante   |
+| Peejay       | Saracho  |
+| Alan         | Beraquit |
