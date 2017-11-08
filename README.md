@@ -14,8 +14,9 @@ HTML introduction was discussed clearly and shown in a way that would be easy to
 Nice flow of topic.
 
 ## 2017-11-08
-### Customizing sublime text and using md file
-Learnt how to use an md file.
-Learnt to install packages to sublime text and customize interface
+### Night 11
+Topics covered so far were taught in a way that is easy to understand.  
+I like the flow of topic and how Sir Billy keeps it that way. Present topic is always related to the previous and a prerequisite of the next one. I noticed how he avoids skipping which I think is a good way to avoid confusion.
+
 
 
