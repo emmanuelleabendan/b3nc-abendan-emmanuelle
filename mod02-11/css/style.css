@@ -4,130 +4,226 @@
 	box-sizing: border-box;
 }
 
-/*image1*/
-.black-container700 { /*used by image2, image3, image4, image5, image6 */
-	width: 700px;
-	margin: 30px auto;
-	background-color: #000;
-	padding: 10px;
+body {
+	background: lightgray;
 }
 
-.black-container700:after,
-.sub-reply:after, /*  used on image6 */
-.black-container700:after { /*  used on image7 */
+/*---FONTS---*/
+h1, h2, h4 {
+	color: #e0e2c7;
+}
+
+p {
+	color: grey;
+}
+
+a {
+	color: #0072BB;
+}
+
+/*---END FONTS---*/
+
+/*---FLOATING---*/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+/*---END FLOATING---*/
+
+/*---FLOAT CLEARING---*/
+.menuitems:after,/*used by image10*/
+.sub-reply:after,/*used by image6*/ 
+.black-box:after {
 	content: "";
 	display: block;
 	clear: both;
 }
+/*---END FLOAT CLEARING---*/
 
-.grey-boxes { /* used by image3, image4 */
+/*---MAIN CONTAINERS---*/
+.black-box { 
+	margin: 30px auto;
+	background-color: #272b33;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.container500 { /*used by image7 and image8 */
+	width: 500px;
+}
+
+.container700 { /*used by image2, image3, image4, image5, image6, and image9 */
+	width: 700px;
+}
+
+.container1000 { /*used by image10*/
+	width: 1000px;
+}
+/*---END MAIN CONTAINERS---*/
+
+/*---DIVS(COLUMNS)---*/
+.side7 { /* used by image5 and image6 */
+	width: 7%;
+}
+
+.side20 { /*used by image4*/
+	width: 20%;
+}
+
+.side30 { /*used by image9*/
+	width: 30%;
+}
+
+.side40 { /*used by image7 and image10*/
+	width: 40%;
+}
+
+.side59 { /*used by image7*/
+	width: 59%;
+}
+
+.side60 { /*used by image10*/
+	width: 60%;
+}
+
+.side69 { /*used by image9*/
+	width: 69%;
+}
+
+.side77 { /*used by image4*/
+    width: 77%;
+    padding: 10px;
+}
+
+.side91 { /*used by image6*/
+	width: 91%;
+}
+
+.side92 { /*used by image6*/
+	width: 92%;
+}
+/*---END DIVS(COLUMNS)---*/
+
+/*---BOXES---*/
+.grey-boxes { /* used by image1, image3, image4 */
 	width: 150px;
 	height: 150px;
 	margin: 10px;
-	float: left;
-	background-color: grey;
+	background-image: url("https://lorempixel.com/150/150/");
+	border-radius: 25px 0;
 }
 
-/*image2*/
-.white-bordered {
-	width: 170px;
-	padding: 10px 10px 50px;
-	border: 1px solid #fff;
-	float: left;
+.white-bordered { /*used by image2 and image10*/
+	border: 1px solid #f0f799;
 	margin: 10px;
 	position: relative;
+	border-radius: 10px;
 }
 
-.grey-boxes2 {
+.bordered1 { /*used by image2*/
+	width: 170px;
+	padding: 10px 10px 50px;
+}
+
+.bordered2 { /*used by image10*/
+	width: 150px;
+	padding: 5px;
+}
+
+.grey-box50 { /*used by image5*/
+	width: 50px;
+	height: 50px;
+	background-image: url("https://lorempixel.com/50/50/");
+	border-radius: 10px;
+}
+
+.grey-boxes2 { /*used by image2 and image9*/
 	width: 150px;
 	height: 150px;
-	background-color: grey;
+	background-image: url("https://lorempixel.com/150/150/");
+	border-radius: 10px 10px 0 0;
 }
 
-.white-bordered p {
-    color: #fff;
+.image9 .grey-boxes2 { /*used by image9*/
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+
+.grey-box-fluid { /*used by image7 and image8*/
+	width: 100%;
+	height: 100px;
+	background-image: url("https://lorempixel.com/500/100/");
+    border-radius: 0 0 10px 10px;
+}
+
+.image7 .grey-box-fluid {
+	border-radius: 20px 0 0 20px;
+}
+
+.image8 .grey-box-fluid {
+	border-radius: 0 20px 20px 0;
+}
+
+.large-grey-box { /*used by image10*/
+    height: 200px;
+	background-image: url("https://lorempixel.com/500/200/");
+}
+
+.grey-box-150x100 { /*used by image10*/
+    width: 150px;
+    height: 100px;
+    float: left;
+	background-image: url("https://lorempixel.com/150/100/");
+    margin-right: 5px;
+}
+/*---END BOXES---*/
+
+/*image2 specifics*/
+.bordered1 p {
     position: absolute;
     bottom: 17px;
     left: 52px;
 }
 
-/*image3*/
+/*image3 specifics*/
 .image3 h1 {
-	color: #fff;
 	margin: 10px;
 }
 
 .image3 p {
-    color: #fff;
     margin: 17px 10px;
 }
 
-/*image 4*/
+/*image 4 specifics*/
 .image4 h1 {
-	color: #fff;
 	margin: 10px;
 }
 
-.left-side {
-	width: 20%;
-	float: left;
-}
-
-.right-side {
-    width: 77%;
-    float: right;
-    padding: 10px;
-}
-
 .image4 p {
-    color: #fff;
     margin-bottom: 15px;
 }
 
-/*image 5*/
-.left-side2 { /* used by image6 */
-	width: 7%;
-	float: left;
-}
-
-.right-side2 { 
-	width: 92%;
-	float: right;
-}
-
-.grey-box50 {
-	width: 50px;
-	height: 50px;
-	background-color: grey;
-}
-
+/*image 5 specifics*/
 textarea {
     width: 100%;
 }
 
-button	{
+.image5 button	{
 	padding: 0 5px;
-	float: right;
 	margin: 5px 0 0px 5px;
 }
 
-/*image 6*/
-.right-side3 {
-	width: 91%;
-	float: right;
-}
-
-.image6 h2 {
-	color: #fff;
-}
-
+/*image 6 specifics*/
 .image6 p {
-    color: #fff;
     margin-top: 10px;
 }
 
 .replies {
-	border-left: 3px solid #eee;
+	border-left: 3px solid #e0e2c7;
 	padding-left: 5px;
 }
 
@@ -135,30 +231,37 @@ button	{
     margin-top: 20px;
 }
 
-/*image 7*/
-.black-container500 { 
-	width: 500px;
-	margin: 30px auto;
-	background-color: #000;
-	padding: 10px;
+/*image 7 specifics*/
+.image7 p, 
+.image8 p { /*used by image8*/
+	color: grey;
+	font-size: 12px;
 }
 
-.left-side40 {
-	width: 40%;
-	float: left
+/*image 9 specifics*/
+.image9 p {
+	margin: 15px 0;
 }
 
-.right-side59 {
-	width: 59%;
-	float: 
+.image9 button {
+	width: 80px;
 }
 
+/*image10 specifics*/
+.side60 p {
+    text-align: center;
+    padding: 15px;
+}
 
+.image10 ul li {
+    color: #grey;
+    list-style-type: none;
+    float: left;
+    background: grey;
+    margin: 20px 5px;
+}
 
-
-
-
-
-
-
-
+.contents p {
+    text-align: left;
+    margin: 15px 0;
+}
