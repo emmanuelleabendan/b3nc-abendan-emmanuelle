@@ -11,14 +11,20 @@ body {
 /*---FONTS---*/
 h1, h2, h4 {
 	color: #e0e2c7;
+	font-family: 'Arvo', serif;
 }
 
 p {
 	color: grey;
+	font-family: 'Lato', sans-serif;
 }
 
 a {
 	color: #0072BB;
+}
+
+a:hover {
+    color: grey;
 }
 
 /*---END FONTS---*/
@@ -182,6 +188,17 @@ a {
 }
 /*---END BOXES---*/
 
+/*---BUTTONS---*/
+button {
+	background-color: #f0f799;
+}
+
+button:hover {
+	background-color: #e0e2c7;
+}
+
+/*---END BUTTONS---*/
+
 /*image2 specifics*/
 .bordered1 p {
     position: absolute;
@@ -210,6 +227,7 @@ a {
 /*image 5 specifics*/
 textarea {
     width: 100%;
+    border-radius: 10px;
 }
 
 .image5 button	{
@@ -253,11 +271,15 @@ textarea {
     padding: 15px;
 }
 
+.image10 .menuitems {
+    background-color: #f0f799;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
 .image10 ul li {
-    color: #grey;
     list-style-type: none;
     float: left;
-    background: grey;
     margin: 20px 5px;
 }
 
