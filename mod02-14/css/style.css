@@ -1,0 +1,175 @@
+/* css reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper {
+	background-color: #fff;
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+h3 {
+	margin-top: 20px;
+}
+
+.item1,
+.item2 {
+	background-color: orange;
+	height: 150px;
+	width: 150px;
+	margin-top: 10px;
+}
+
+.item2 {
+	border-right: 10px solid #0000FF;
+	border-left: 10px solid #0000FF;
+}
+
+.item3 {
+    display: inline;
+    border: 1px solid #000;
+    border-radius: 0 20px 0 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.item4,
+.item5 {
+	background-color: pink;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+.item5 {
+	position: relative;
+}
+
+.item5 > p,
+.item8 > p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.item6,
+.item7,
+.item8 {
+	width: 400px;
+	min-height: 200px;
+	border: 1px solid #000;
+	position: relative;
+}
+
+.item6 > img {
+	width: 120px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.item7 > img,
+.item8 > img {
+	position: absolute;
+	width: 80px;
+}
+
+.item7 > img[alt*="sun"],
+.item8 > img[alt*="sun"] {
+	top: 0;
+	left: 0;
+}
+
+.item7 > img[alt*="coconut tree"],
+.item8 > img[alt*="coconut tree"] {
+	bottom: 0;
+	right: 0;
+}
+
+.item9 {
+	border-radius: 50%;
+	width: 150px;
+}
+
+.item10 {
+	border: 1px solid #000;
+	height: 100px;
+	width: 400px;
+	position: relative;
+	margin-top: 10px;
+}
+
+
+.item10 > img {
+	border-radius: 50%;
+	width: 100px;
+}
+
+.item10 > span {
+	position: absolute;
+	line-height: 100px;	
+}
+
+.item11,
+.item12 {
+	width: 400px;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.item11 > img,
+.item12 > img {
+	width: 50px;
+}
+
+.item11 > h2 {
+	margin: 15px auto;
+}
+
+.content {
+	background-color: pink;
+	padding: 15px;
+}
+
+.content p {
+	margin-top: 10px;
+}
+
+table {
+	text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 5px 15px;
+}
+
+th {
+	background-color: #000;
+	color: #fff;
+}
+
+td {
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
