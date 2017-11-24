@@ -1,0 +1,278 @@
+* {
+	box-sizing: border-box;
+}
+
+
+/* general rules */
+
+
+/* removes default margin to document */
+body {
+	margin: 0;
+}
+
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: darkgrey;
+}
+
+/*
+ *
+ * Navigation
+ *
+ */
+
+.nav {
+	background-color: yellow;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul > li {
+	list-style: none;
+	background-color: lightblue;
+	margin-bottom: 2px;
+	text-align: center;
+	line-height: 48px;
+	/*padding: 20px;*/
+}
+
+ul > li > a {
+	text-decoration: none;
+}
+
+.main {
+	background-color: grey;
+}
+
+/*
+ *
+ * Banner
+ *
+ */
+
+.banner {
+	background-color: skyblue;
+	background-image: url('../img/learnJS.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+}
+
+
+.about {
+	background-color: indianred;
+}
+
+
+
+/*
+ *
+ * Services
+ *
+ */
+
+.services {
+	background-color: midnightblue;
+}
+
+.services h3 {
+	margin-left: 5%;
+}
+
+.services p {
+	margin: auto 5% 5%;
+	text-align: justify;
+}
+
+.column {
+	border: 1px solid black;
+}
+
+.services img,
+.gallery img {
+	width: 100%;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.projects {
+	background-color: crimson;
+}
+
+/*
+ *
+ * Gallery
+ *
+ */
+
+.gallery {
+	background-color: orange;
+}
+
+.gallery h3 {
+	margin-left: 5%;
+}
+
+.gallery p {
+	margin: auto 5% 5%;
+	text-align: justify;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+.footer {
+	background-color: green;
+	min-height: 70px;
+}
+
+img[alt*="Social"] {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+	.logo {
+		margin: 0 auto;
+	}
+
+	.box {
+		padding: 5%;
+	}
+
+	.footer {
+		text-align: center;
+	}
+
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+	.main {
+		margin-left: 150px;
+	}
+
+	.nav {
+		height: 100%;
+		width: 150px;
+		position: fixed;
+	}
+
+	.logo {
+		width: 90px;
+		height: 90px;
+	}
+
+	.box {
+	    padding: 5%;
+	    margin: 0 auto;
+	    max-width: 320px;
+	}
+
+	.gallery .column {
+	    width: 48%;
+	    float: left;
+	    margin: 20px 1% 0;
+	}
+
+	.contact {
+		float: right;
+	}
+}
+
+
+/* desktop devices */
+
+@media only screen and (min-width:961px) {
+
+	.main {
+		margin-left: 200px;
+	}
+
+	.nav {
+		height: 100%;
+		width: 200px;
+		position: fixed;
+	}
+
+	.logo {
+		width: 140px;
+		height: 140px;
+	}
+
+	.banner {
+		min-height: 700px;
+	}
+
+
+	.box {
+		width: 40%;		
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.about,
+	.services,
+	.projects {
+		min-height: 300px;
+	}
+
+	.column {
+		width: 31%;
+		margin-left: 1.16%;
+		margin-right: 1.16%;
+		float: left;
+	}
+
+	.gallery {
+		min-height: 400px;
+	}
+
+	.gallery > .column {
+		width: 23%;
+		margin-left: 1%; 
+		margin-right: 1%;
+	}
+
+	.contact {
+		float: right;
+	}
+
+}
