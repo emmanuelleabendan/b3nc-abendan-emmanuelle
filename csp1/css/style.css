@@ -1,0 +1,101 @@
+/*Navigation Bar*/
+.navbar{
+	margin: 0;
+}
+
+.navbar-brand {
+	height: auto;
+	max-width: 60%;
+}
+
+/*Contact Icons*/
+.contact-icons {
+	padding: 15px;
+}
+
+.fa {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.fa-mobile:before, 
+.fa-envelope-o:before {
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.fa-mobile {
+    font-size: 40px;
+    background-color: orange;
+}
+
+.fa-envelope-o {
+    font-size: 25px;
+    background-color: orange;
+}
+
+/*rowLinks*/
+.rowLinks button {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 20px 6% 0;
+}
+
+
+/*contentRow*/
+.contentRow img {
+	width: 100%;
+}
+
+.content {
+    background-color: pink;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.contentRow .column:last-of-type {
+    background-color: lightgrey;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+label {
+	margin-top: 15px;
+}
+
+
+/*Footer*/
+footer {
+    padding: 20px;
+}
+
+/*Media queries for mobile*/
+@media only screen and (max-width: 400px) {
+
+}
+
+
+/*Media queries for tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.rowLinks button {
+	    width: 200px;
+	    height: 200px;
+	}
+}
+
+/*Media queries for desktop*/
+
+@media only screen and (min-width:961px) {
+	.rowLinks button {
+	    width: 200px;
+	    height: 200px;
+	    margin-right: 12px;
+	    margin-left: 12px;
+	}
+
+}
