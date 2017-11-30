@@ -1,0 +1,17 @@
+/*rowMain*/
+.rowMain {
+	background: url("https://lorempixel.com/1500/600/") no-repeat scroll center center / cover transparent;
+}
+
+#rowInternal1 .imageCol  {
+	background: url("https://lorempixel.com/900/600/") no-repeat scroll center center / cover transparent;
+}
+
+#rowInternal3 .imageCol  {
+	background: url("https://lorempixel.com/900/600/") no-repeat scroll center center / cover transparent;
+}
+
+
+.parallax { 
+    background-image: url("https://lorempixel.com/1000/400/");
+ }
