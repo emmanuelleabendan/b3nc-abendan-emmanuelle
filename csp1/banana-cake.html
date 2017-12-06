@@ -23,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="css/banana-cake.css">
 
 	<!-- import google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Fugaz+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Pacifico" rel="stylesheet">
 
 </head>
 <body>
@@ -36,18 +36,26 @@
 					<a href="#"><img class="img-responsive logo" src="img/josies-delicacies.png" alt="Business logo"></a>
 				</div>		
 				<div class="column col-xs-6 contactDetails">
-					<p>email@address.com</p>
-					<p>XXXXXXXXXX</p>
+					<div class="headerEmail">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<span>
+							<a href="mailto:josies-delicacies@gmail.com">josies-delicacies@gmail.com</a>
+						</span>
+					</div>
+					<div class="headerPhone">
+						<i class="fa fa-mobile" aria-hidden="true"></i>
+						<span>0926 597 9067</span>
+					</div>
 				</div>		
 			</div>
 		</header>
 
-		<nav class="navbar navbar-default">
+		<nav id="navigation" class="navbar navbar-default">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#"><img class="img-responsive" src="img/josies-delicacies.png" alt="Business logo"></a>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -56,13 +64,13 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div id="bs-navbar-collapse" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">home<span class="sr-only">(current)</span></a></li>
-						<li class="dropdown">
+						<li><a href="index.html">home<span class="sr-only">(current)</span></a></li>
+						<li class="dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">products<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="banana-cake.html">banana-cake</a></li>
+								<li class="active"><a href="banana-cake.html">banana-cake</a></li>
 								<li><a href="cassava-cake.html">cassava-cake</a></li>
 								<li><a href="leche-flan.html">leche-flan</a></li>
 								<li><a href="puto.html">puto</a></li>
@@ -75,8 +83,12 @@
 		</nav>
 
 		<div class="contact-icons text-center">
-			<span><i class="fa fa-mobile" aria-hidden="true"></i></span>
-			<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+			<a href="tel:+639265979067">
+				<span><i class="fa fa-mobile" aria-hidden="true"></i></span>		
+			</a>
+			<a href="mailto:josies-delicacies@gmail.com">
+				<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+			</a>
 		</div><!-- /.contact-icons -->
 
 
@@ -84,7 +96,7 @@
 		<div class="container-fluid">
 			<div class="row rowMain text-center">
 				<div class="column col-xs-12">
-					<h1>HEADING</h1>	
+					<h1>Heading</h1>	
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -95,7 +107,7 @@
 			</div>
 		</div><!-- /.container-fluid -->
 
-		<div class="container-fluid">
+		<div class="container">
 			<div id="rowInternal1" class="row">
 				<div class="column col-xs-12 col-sm-12 col-md-6 imageCol">
 				</div>
@@ -107,7 +119,9 @@
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<button type="button" class="btn btn-primary">Primary</button>					
+						<a href="contact.html">
+							<button type="button" class="btn">Order banana cake</button>
+						</a>
 				</div>
 			</div><!-- /.row -->
 		</div><!-- /.container-fluid -->
@@ -119,7 +133,7 @@
 			</div><!-- /.row -->
 		</div><!-- /.container-fluid -->
 
-		<div class="container-fluid">
+		<div class="container">
 			<div id="rowInternal3" class="row">
 				<div class="column col-xs-12 col-sm-12 col-md-6 contentCol">
 						<h2>Heading</h2>
@@ -129,7 +143,9 @@
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<button type="button" class="btn btn-primary">Primary</button>					
+						<a href="contact.html">
+							<button type="button" class="btn">Contact us now</button>
+						</a>			
 				</div>
 				<div class="column col-xs-12 col-sm-12 col-md-6 imageCol">
 				</div>

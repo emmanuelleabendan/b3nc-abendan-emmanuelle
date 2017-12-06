@@ -16,7 +16,7 @@ body {
 	
 }
 
-/*fonts*/
+/*generic fonts*/
 h1,
 h2,
 h3 {
@@ -46,16 +46,39 @@ span,
     color: #331507;
 }
 
+p, 
+nav a,
+.btn {
+    font-size: 1.2em;
+}
 
+/*rowHeader*/
+.rowHeader {
+	padding: 20px;
+}
+
+.rowHeader span {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
 
 /*contactDetails*/
 .contactDetails {
     text-align: right;
 }
 
+.headerEmail > *, 
+.headerPhone > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerEmail a:hover {
+    color: #a6000b;
+}
+
 /*Business logo*/
 .logo {
-    padding: 20px;
     max-width: 50%;
     min-width: 200px;
 }
@@ -83,14 +106,36 @@ span,
     padding: 0;
 }
 
-.navbar-default .navbar-nav>.active>a {
-	background-color: #a6000b;
+#navigation .active:hover > a,
+#navigation li:focus > a, 
+#navigation li:hover > a,
+#navigation .open > a {
+	background-color: #331507;
+	color: #fff;
+}
+
+#navigation .active > a {
+    background-color: #a6000b;
+    color: #fff;
+}
+
+#navigation .open .caret,
+#navigation .active .caret,
+#navigation .dropdown:hover .caret {
 	color: #fff;
 }
 
 .dropdown-menu {
 	width: 100%;
 	background-color: #e4ba88;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #a6000b;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a6000b;
 }
 
 /*Contact Icons*/
@@ -101,9 +146,10 @@ span,
 
 .fa {
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     position: relative;
+    color: #fff;
 }
 
 .fa-mobile:before, 
@@ -115,13 +161,13 @@ span,
 }
 
 .fa-mobile {
-    font-size: 40px;
-    background-color: orange;
+    font-size: 30px;
+    background-color: #a6000b;
 }
 
 .fa-envelope-o {
-    font-size: 25px;
-    background-color: orange;
+    font-size: 20px;
+    background-color: #a6000b;
 }
 
 /*carousel*/
@@ -134,6 +180,20 @@ span,
 	position: relative;
 }
 
+.carousel-caption h2 {
+    font-size: 3em;
+    text-shadow: 1px 1px 5px rgba(255,255,255,0.75);
+}
+
+.carousel-caption p {
+    font-size: 1.5em;
+    background-color: rgba(255,255,255,0.85);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
 
 /*Row of icon buttons*/
 .rowLinks {
@@ -143,9 +203,13 @@ span,
 
 .rowLinks button {
     border-radius: 10%;
-    width: 120px;
-    height: 120px;
-    margin: 20px 3% 0;
+    width: 130px;
+    height: 130px;
+    margin: 20px 4% 0;
+}
+
+.rowLinks button:hover {
+	background-color: #331507;
 }
 
 .rowLinks button > p {
@@ -156,7 +220,9 @@ span,
     padding: 10px;
 }
 
-
+.rowLinks button:hover p {
+	background-color: #a6000b;
+}
 
 /*contentRow*/
 .contentRow {
@@ -175,7 +241,10 @@ span,
     padding: 20px;    
 	margin-top: 20px;
 	color: #331507;
+}
 
+.contentContact a:hover {
+    color: #a6000b;
 }
 
 .contentRow img {
@@ -184,6 +253,11 @@ span,
 
 .btn {
     background-color: #a6000b;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #331507;
     color: #fff;
 }
 
@@ -208,16 +282,32 @@ label {
     display: block;
 }
 
+.rowMain h1 {
+    font-size: 3.5em;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.75);
+}
 
- .imageCol {
+.rowMain p {
+	color: #fff;
+    max-width: 90%;
+    margin: 25px auto 0;
+}
+
+#rowInternal1,
+#rowInternal3 {
+	padding: 50px 20px;
+}
+
+
+.imageCol {
  	padding: 0;
- 	min-height: 200px;
- }
+	min-height: 200px;
+}
 
- .contentCol,
- .formCol {
+.contentCol,
+.formCol {
  	padding: 20px;
- }
+}
 
   /* Create the parallax scrolling effect */
 .parallax { 
@@ -236,7 +326,7 @@ footer {
 }
 
 /* mobile or small-sized devices */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 520px) {
 	/*rowHeader*/
 	.rowHeader {
 		display: none;
@@ -246,12 +336,24 @@ footer {
 	.contact-icons {
 		display: block;
 	}
-	
+
+	.fa {
+	    margin: 0 5px;
+	}
+
+	.btn p {
+    	font-size: 0.86em;
+	}
 }
 
 
 /*Custom media queries for in-between small and medium*/
 @media only screen and (min-width: 768px) {
+
+	.dropdown-menu>li>a {
+    	padding-top: 12px;
+    	padding-bottom: 12px;
+	}
 	
 	.container-fluid>.navbar-collapse, 
 	.container-fluid>.navbar-header, 
@@ -265,10 +367,32 @@ footer {
  	#rowInternal3 {
  		display: flex;
  	}
+
+ 	.rowMain p {
+ 	   max-width: 75%;
+	}
 }
 
 /*Media queries for tablet*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 521px) and (max-width: 960px) {
+
+	.rowHeader span {
+    	font-size: 1.2em;
+    	line-height: 1.5;
+	}
+
+	.fa {
+    	width: 30px;
+    	height: 30px;
+	}
+
+	.fa-mobile {
+    	font-size: 22px;
+	}
+
+	.fa-envelope-o {
+    	font-size: 14px;
+	}
 
 	.navbar-header {
 		display: none;
@@ -332,6 +456,17 @@ footer {
 /*Media queries for desktop*/
 @media only screen and (min-width:961px) {
 
+	/*rowHeader*/
+	.logo {
+   		min-width: 355px;
+	}
+
+	.rowHeader span {
+    	font-size: 2em;
+    	line-height: 2;
+	}
+
+	/*nav*/
 	.navbar-header {
 		display: none;
 	}
@@ -357,6 +492,13 @@ footer {
 		transform: none;
 	}
 
+	/*rowMain*/
+	.rowMain {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	/*rowLinks buttons*/
 	.rowLinks button {
 	    width: 200px;
 	    height: 200px;
@@ -364,11 +506,7 @@ footer {
 	    margin-left: 12px;
 	}
 
-	.rowMain {
-		padding-top: 120px;
-		padding-bottom: 120px;
-	}
-
+	/*internal page rows*/
 	#rowInternal1,
  	#rowInternal3 {
  		display: flex;
