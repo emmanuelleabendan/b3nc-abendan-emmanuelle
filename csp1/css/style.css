@@ -46,12 +46,6 @@ span,
     color: #331507;
 }
 
-p, 
-nav a,
-.btn {
-    font-size: 1.2em;
-}
-
 /*rowHeader*/
 .rowHeader {
 	padding: 20px;
@@ -182,18 +176,9 @@ nav a,
 
 .carousel-caption h2 {
     font-size: 3em;
-    text-shadow: 1px 1px 5px rgba(255,255,255,0.75);
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.75);
+	line-height: 1.5;
 }
-
-.carousel-caption p {
-    font-size: 1.5em;
-    background-color: rgba(255,255,255,0.85);
-    display: inline-block;
-    padding: 5px 20px;
-    border-radius: 10px;
-    text-shadow: none;
-}
-
 
 /*Row of icon buttons*/
 .rowLinks {
@@ -267,7 +252,7 @@ label {
 
 /*content rows internal pages*/
 .rowMain {
-	padding: 50px;
+	padding: 50px; 
 	position: relative;
 }
 
@@ -285,12 +270,6 @@ label {
 .rowMain h1 {
     font-size: 3.5em;
     text-shadow: 1px 1px 0px rgba(255,255,255,0.75);
-}
-
-.rowMain p {
-	color: #fff;
-    max-width: 90%;
-    margin: 25px auto 0;
 }
 
 #rowInternal1,
@@ -315,7 +294,7 @@ label {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 
@@ -340,10 +319,6 @@ footer {
 	.fa {
 	    margin: 0 5px;
 	}
-
-	.btn p {
-    	font-size: 0.86em;
-	}
 }
 
 
@@ -361,6 +336,11 @@ footer {
 	.container>.navbar-header {
 		margin-right: -15px;
 		margin-left: -15px;
+	}
+	
+	.carousel-caption h2,
+	.rowMain h1	{
+		font-size: 4em;
 	}
 
 	#rowInternal1,
@@ -494,8 +474,8 @@ footer {
 
 	/*rowMain*/
 	.rowMain {
-		padding-top: 120px;
-		padding-bottom: 120px;
+		padding-top: 150px;
+		padding-bottom: 150px;
 	}
 
 	/*rowLinks buttons*/
@@ -511,6 +491,13 @@ footer {
  	#rowInternal3 {
  		display: flex;
  	}
+	
+	.attribution {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 5px;
+	}
 
  	.contentCol, 
 	.formCol {
