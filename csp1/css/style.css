@@ -46,12 +46,6 @@ span,
     color: #331507;
 }
 
-p, 
-nav a,
-.btn {
-    font-size: 1.2em;
-}
-
 /*rowHeader*/
 .rowHeader {
 	padding: 20px;
@@ -339,10 +333,6 @@ footer {
 
 	.fa {
 	    margin: 0 5px;
-	}
-
-	.btn p {
-    	font-size: 0.86em;
 	}
 }
 
