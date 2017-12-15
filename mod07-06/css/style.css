@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	text-align: center;
+}
+
+.wrapper {
+	background-color: white;
+	width: 80vw; /* vw = viewport width */
+	/*height: 100vh;*/  /*vh = viewport height */
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+input[type="button"] {
+    padding: 20px;
+    margin: 5px;
+    width: 100px;
+}
+
+p {
+	font-size: 3em;
+}
