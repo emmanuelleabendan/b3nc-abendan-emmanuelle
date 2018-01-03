@@ -84,7 +84,7 @@ function clearExpression() {
 	val = 0;
 	expression = "";
 	newVal = expression + val; /*makes sure display is fresh 0*/
-	document.getElementById("display").innerHTML = newVal;
+	document.getElementById("display").innerHTML = parseInt(newVal);
 }
 
 function delChar() {

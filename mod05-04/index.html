@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Number Activity</title>
+
+	<style type="text/css">
+
+		body {
+			text-align: center;
+		}
+
+		input,
+		button {
+			font-size: 20px;
+		}
+	</style>
+
+
+</head>
+<body>
+
+<h1>Enter any number from 1-30!</h1>
+<input type="text" id="theNumber">
+<button onclick="checkNumber()">Check</button>	
+<h2 id="tries"></h2>
+
+<script type="text/javascript">
+	var ctr = 5;
+	document.getElementById("tries").innerHTML = "Tries Left = " + ctr;
+
+	function checkNumber(){
+		var rightNumber = 20;
+		var number = document.getElementById("theNumber").value;
+
+		if(ctr != 0){
+			while(ctr > 0) {
+				if(number > 30 || number < 1){
+					alert("Out of range!");
+					clearField();
+					break;
+				}else if(number < rightNumber){
+					alert("Higher!");
+					clearField();
+					break;
+				}else if(number > rightNumber){
+					alert("Lower!");
+					clearField();
+					break;
+				}else{
+					alert("You got it right");
+					break;
+				}
+			}
+		}else{
+			alert("OUT OF TRIES!!!");
+		}
+		
+		
+	}
+
+	function clearField(){
+		document.getElementById("theNumber").value = null;
+		ctr--;
+		document.getElementById("tries").innerHTML = "Tries Left = " + ctr;
+	}
+
+</script>
+
+</body>
+</html>
