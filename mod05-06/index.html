@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>While loop exercise</title>
+
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input type="number" id="input"><button id="setCtr" onclick="draw()">Draw</button>
+<h2 id="text"></h2>
+
+<script type="text/javascript">
+
+	function draw(){
+		var num = document.getElementById("input").value;
+
+
+		for(var ctr = num; ctr>0; ctr--){
+			for(var ctrY = num; ctrY>0; ctr--){
+				document.getElementById("text").innerHTML += " *";
+			}
+			document.getElementById("text").innerHTML += "<br/>";
+
+		}
+
+		
+
+	}
+
+
+
+
+
+
+
+		// for(var ctr = 0; ctr <= 20; ctr++){
+		// 	if(ctr % 3 == 0 && ctr % 5 == 0){
+		// 		console.log(ctr + " is a multiple of 3 and 5");
+		// 	}else if(ctr % 3 == 0){
+		// 		console.log(ctr + " is a multiple of 3 but not of 5");
+		// 	}else if(ctr % 5 == 0){
+		// 		console.log(ctr + " is a multiple of 5 but not of 3");
+		// 	}else{
+		// 		console.log(ctr + " is not a multiple of 5 nor of 3");
+		// 	}
+		// }
+		
+		// var sumEven = 0;
+		// var sumOdd = 0;
+
+		// var ctr = 0;
+		// while(ctr <= 50){
+
+		// 	if(ctr % 2 == 0){
+		// 		sumEven += ctr;	
+		// 	}else{
+		// 		sumOdd += ctr;
+		// 	}
+		// 	ctr++;
+		// }
+
+		// for(var ctr = 0; ctr <= 50; ctr++){
+		// 	if(ctr % 2 == 0){
+		// 		sumEven += ctr;	
+		// 	}else{
+		// 		sumOdd += ctr;
+		// 	}
+		// }
+
+		// alert("sum of even = " + sumEven + " and sum of odd = " + sumOdd);
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
